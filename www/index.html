@@ -32,6 +32,221 @@
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
+            
+            <h1><a href="javascript:hideshow(document.getElementById('meisterinfo'))">Become the<br />International PokeMaster!</a></h1>
+
+            <div id="meisterinfo" style="display:none;">
+            <form name="meisterform">
+        	<div align="center"><input id="name" type="text" name="name" value="" placeholder="Your Name" /></div><br />
+        	<select id="language" name="language">
+            	<option value="">Choose your Battlefield</option>
+                <option value="german">Deutsches Arena</option>
+                <option value="spanish">Estadio Español</option>
+                <option value="french">Stade de France</option>
+            </select> <br />
+        	<select id="gender" name="gender">
+            	<option value="">Choose your Team</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select> <br />
+            <select id="bday_month" name="bday_month">
+            	<option value="">Birth Month</option>
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+            </select> 
+            <select id="bday_day" name="bday_day">
+            	<option value="">Birthday</option>
+                <option value="0">01</option>
+                <option value="1">02</option>
+                <option value="2">03</option>
+                <option value="3">04</option>
+                <option value="4">05</option>
+                <option value="5">06</option>
+                <option value="6">07</option>
+                <option value="7">08</option>
+                <option value="8">09</option>
+                <option value="9">10</option>
+                <option value="10">11</option>
+                <option value="11">12</option>
+                <option value="12">13</option>
+                <option value="13">14</option>
+                <option value="14">15</option>
+                <option value="15">16</option>
+                <option value="16">17</option>
+                <option value="17">18</option>
+                <option value="18">19</option>
+                <option value="19">20</option>
+                <option value="20">21</option>
+                <option value="21">22</option>
+                <option value="22">23</option>
+                <option value="23">24</option>
+                <option value="24">25</option>
+                <option value="25">26</option>
+                <option value="26">27</option>
+                <option value="27">28</option>
+                <option value="28">29</option>
+                <option value="29">30</option>
+                <option value="30">31</option>
+            </select><br />
+            <select id="pokemon" name="pokemon">
+            	<option>Choose your Pokemon</option>
+                <option value="0">Bulbasur</option>
+                <option value="1">Ivysaur</option>
+                <option value="2">Venusaur</option>
+                <option value="3">Charmander</option>
+                <option value="4">Charmeleon</option>
+                <option value="5">Charizard</option>
+                <option value="6">Squirtle</option>
+                <option value="7">Wartortle</option>
+                <option value="8">Blastoise</option>
+                <option value="9">Pikachu</option>        
+            </select><br />
+                <br />
+            <div align="center"><input type="button" name="submit" method="get" value="Become the International PokeMaster!" onclick="becomeMeister()" /></div>
+        
+            
+            <script type="text/javascript"> 
+        
+        	function hideshow(which){
+        	if (!document.getElementById)
+        	return
+        	if (which.style.display=="block")
+        	which.style.display="block"
+        	else
+        	which.style.display="block"
+        	}
+        
+        	var germanNumbers = [ 'Erster', 'Zweiter', 'Dritter', 'Vierter', 'Fünfter', 'Sechster', 'Siebter', 'Achter', 'Neunter', 'Zehnter', 'Elfter', 'Zwölfter', 'Dreizehnter', 'Vierzehnter', 'Fünfzehnter', 'Sechszehnter', 'Siebzehnter', 'Achtzehnter', 'Neunzehnter', 'Zwanzigsten', 'Einundzwanzigsten', 'Zweiundzwanzigsten', 'Dreiundzwanzigsten', 'Vierundzwanzigsten', 'Fünfundzwanzigsten', 'Sechsundzwanzigsten', 'Siebenundzwanzigsten', 'Achtundzwanzigsten', 'Neunundzwanzigsten', 'Dreizigsten', 'Einundreizigsten' ];
+        	var germanMonths = [ 'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+        	var germanPokemon = [ 'Bisasam', 'Bisaknosp', 'Bisaflor', 'Glumanda', 'Glutexo', 'Glurak', 'Schiggy', 'Schillok', 'Turtok', '...Pikachu'];
+        	var germanMaleNames = [ 'Hans', 'Klaus', 'Uli', 'Wolfgang', 'Karl', 'Johannes', 'Otto', 'Joerg' ];
+        	var germanFemaleNames = [ 'Annika', 'Gerlinde', 'Ramona', 'Sabine', 'Melina', 'Fabia', 'Korinna', 'Anne Marie' ];	
+        
+        	var spanishNumbers = [ 'Primero de', 'Dos de', 'Tres de', 'Cuatro de', 'Cinco de', 'Seis de', 'Siete de', 'Ocho de', 'Nueve de', 'Diez de', 'Once de', 'Doce de', 'Trece de', 'Catorce de', 'Quince de', 'Dieciseis de', 'Diecisiete de', 'Dieciocho de', 'Diecinueve de', 'Veinte de', 'Veintiuno de', 'Veintidos de', 'Veintitres de', 'Veinticuatro de', 'Veinticinco de', 'Veintiseis de', 'Veintisiete de', 'Veintiocho de', 'Veintinueve de', 'Treinta de', 'Treinta y uno de'  ];
+        	var spanishMonths = [ 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+        	var spanishPokemon = [ 'Bulbasur', 'Ivysaur', 'Venusaur', 'Charmander', 'Charmeleon', 'Charizard', 'Squirtle', 'Wartortle', 'Blastoise', '...Pikachu'];
+        	var spanishMaleNames = [ 'Antonio', 'Eduardo', 'Pedro', 'Juan', 'Ricardo', 'Leopoldo', 'Julio', 'Lucas' ];
+        	var spanishFemaleNames = [ 'Lupita', 'Maria', 'Catalina', 'Juana', 'Tati', 'Liliana', 'Carmina', 'Yolanda' ];	
+        
+        	var frenchNumbers = [ 'Premiere de', 'Deux', 'Trois', 'Quatre', 'Cinq', 'Six', 'Sept', 'Huit', 'Neuf', 'Dix', 'Onze', 'Douze', 'Treize', 'Quatorze', 'Quinze', 'Seize', 'Dix-sept', 'Dix-huit', 'Dix-neuf', 'Vingt', 'Vingt et un', 'Vingt et deux', 'Vingt et trois', 'Vingt et quatre', 'Vingt et cinq', 'Vingt et six', 'Vingt et sept', 'Vingt et huit', 'Vingt et neuf', 'Trente', 'Trente et un'  ];
+        	var frenchMonths = [ 'Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Decembre'];
+        	var frenchPokemon = [ 'Bulbizarre', 'Herbizarre', 'Florizarre', 'Salameche', 'Reptincel', 'Dracaufeu', 'Carapuce', 'Carabaffe', 'Tortank', '...Pikachu'];
+        	var frenchMaleNames = [ 'Jean-Pierre', 'Marc-Antoine', 'Louis', 'Alceste', 'Rufus', 'Nicolas', 'Pierre-Jean', 'Luc' ];
+        	var frenchFemaleNames = [ 'Claudine', 'Geneva', 'Joanne', 'Louisette', 'Chloe', 'Julianne', 'Simone', 'Anette' ];
+        						
+        	function becomeMeister(){
+        
+        	var name = document.getElementById('name').value;
+        	document.getElementById('oldName').innerHTML = name;
+        		
+        	var newLanguage = document.getElementById('language').value;
+        		
+        	var newName = document.getElementById('gender').value;	
+        	
+        	var randomnumber=Math.floor(Math.random()*4)	
+        	
+        	if(newLanguage == 'german'){
+        		if(newName == 'male'){
+        		document.getElementById('new_name').innerHTML = (germanMaleNames[randomnumber]);
+        		}
+        		else{	
+        		document.getElementById('new_name').innerHTML = (germanFemaleNames[randomnumber]);	
+        		}
+        
+        	var bday1 = document.getElementById('bday_month').value;
+        	document.getElementById('newBday1').innerHTML = (germanMonths[bday1]);
+        	
+        	var bday2 = document.getElementById('bday_day').value;
+        	document.getElementById('newBday2').innerHTML = (germanNumbers[bday2]);
+        	
+        	var pokemon = document.getElementById('pokemon').value;
+        	document.getElementById('newPokemon').innerHTML = (germanPokemon[pokemon]);
+        
+        	}	
+        		
+        	if(newLanguage == 'spanish'){
+        		if(newName == 'male'){
+        			document.getElementById('new_name').innerHTML = (spanishMaleNames[randomnumber]);
+        			}
+        			else{	
+        			document.getElementById('new_name').innerHTML = (spanishFemaleNames[randomnumber]);	
+        			}	
+        
+        	var bday1 = document.getElementById('bday_month').value;
+        	document.getElementById('newBday1').innerHTML = (spanishMonths[bday1]);
+        	
+        	var bday2 = document.getElementById('bday_day').value;
+        	document.getElementById('newBday2').innerHTML = (spanishNumbers[bday2]);
+        	
+        	var pokemon = document.getElementById('pokemon').value;
+        	document.getElementById('newPokemon').innerHTML = (spanishPokemon[pokemon]);
+        	}
+        		
+        	if(newLanguage == 'french'){
+        		if(newName == 'male'){
+        			document.getElementById('new_name').innerHTML = (frenchMaleNames[randomnumber]);
+        			}
+        			else{	
+        			document.getElementById('new_name').innerHTML = (frenchFemaleNames[randomnumber]);	
+        			}	
+        
+        	var bday1 = document.getElementById('bday_month').value;
+        	document.getElementById('newBday1').innerHTML = (frenchMonths[bday1]);
+        	
+        	var bday2 = document.getElementById('bday_day').value;
+        	document.getElementById('newBday2').innerHTML = (frenchNumbers[bday2]);
+        	
+        	var pokemon = document.getElementById('pokemon').value;
+        	document.getElementById('newPokemon').innerHTML = (frenchPokemon[pokemon]);
+        	}
+        	
+        	hideshow(document.getElementById('resultat'));
+        	
+        	}
+        	
+        	function anotherChance(){
+        	
+        	var results = document.getElementById('resultat');
+        	
+        	results.style.display == "block" ? results.style.display = "none" : 
+        	results.style.display = "block"; 
+        		
+        	document.getElementById('meisterform').reset();
+        
+        	}
+        	 
+        	
+        	</script>
+                      
+        </div>
+        
+        <br /><br />
+        
+        
+        <div id="resultat" style="display:none;">
+        
+        	<b>Welcome</b> <strike><b id="oldName"></b></strike> <b id="new_name">?</b><br />
+            Your training starts on <b id="newBday2">?</b> <b id="newBday1"></b> 
+            and your Pokemon shall be <b id="newPokemon">?</b>
+            
+            <br />
+            <br />
+            
+             <div align="center"><input type="reset" name="reset" value="Another Chance?!" onclick="anotherChance()" /></div>
+        
+        
+        </div>
+            
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
