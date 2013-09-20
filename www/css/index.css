@@ -78,6 +78,47 @@ h1 {
     text-align:center;
 }
 
+b {
+	color: #fff;
+	font-weight: bolder;
+	}
+	
+strike {
+	font-size: 16px;
+	}
+	
+a {
+	color: red;
+	}
+	
+a:hover {
+	color: black;
+	}
+	
+#meisterinfo, #resultat {
+	background: red;
+	border: 10px solid #fff;
+	height: 300px;
+	margin: 0 auto;
+	padding: 15px;
+	width: 300px;
+	}
+	
+#resultat {
+	font-size: 24px;
+	}
+	
+input, select {
+	background: #000;
+	border: 0px;
+	color: #fff;
+	font-size: 14px;
+	height: 25px;
+	margin: 3px;
+	padding-left: ;
+	text-align:center;
+	}
+
 .event {
     border-radius:4px;
     -webkit-border-radius:4px;
